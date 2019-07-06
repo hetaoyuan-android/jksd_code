@@ -1,0 +1,29 @@
+package com.glens.jksd.utils.baseEvent;
+
+/**
+ *
+ */
+
+
+public enum Event {
+
+    /**
+     * 删除图片
+     */
+    DELETE_IMAGE_SUCCESS,
+    POP_POPUPWINDOW_SHOW,
+    DELETE_IMAGE,
+    NET_POST_DETECTION_IMAGE,
+
+
+    NET_OMCONSTRUCTION_PHASEMATERIAL_SUCCESS,
+    UPDATE_OMCONSTRUCTIONMATERIAL_SUCCESS,
+    NET_OMCOMPLETION_PHASEMATERIAL_SUCCESS,
+
+
+
+
+
+}
+
+

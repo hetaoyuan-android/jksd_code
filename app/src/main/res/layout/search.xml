@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:layout_marginTop="@dimen/space_16"
+    android:layout_marginLeft="@dimen/space_15"
+    android:layout_marginRight="@dimen/space_5"
+    android:gravity="center"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/space_5"
+        android:background="@drawable/search_text_shape"
+        >
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="@dimen/space_12"
+            android:layout_height="@dimen/space_12"
+            android:layout_marginStart="@dimen/space_15"
+            android:layout_marginTop="@dimen/space_3"
+            android:src="@drawable/repair_search"/>
+        <EditText
+            android:id="@+id/repair_task_search"
+            android:layout_width="match_parent"
+            android:layout_toEndOf="@id/iv_search"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:textColor="@color/hint_text"
+            android:hint="@string/repair_search_hint"
+            android:textSize="@dimen/text_size14"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/detection_main_search"
+        android:layout_width="@dimen/space_40"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size14"
+        android:background="@drawable/search_shape_bg"
+        android:layout_margin="@dimen/space_2"
+        android:visibility="invisible"
+        android:text="@string/search"/>
+
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ry_insulator"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.activity_repair.stand_add.AddInsulatorCleanActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/item_text_style"
+                    android:text="@string/repair_equipment_name" />
+
+                <TextView
+                    android:id="@+id/et_repair_equipment"
+                    style="@style/et_item_right"
+                    android:hint="@string/repair_select_equip" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/grey_dialog" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/item_text_style"
+                    android:text="@string/power_level" />
+
+                <TextView
+                    android:id="@+id/et_power_level"
+                    style="@style/et_item_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/grey_dialog" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/item_text_style"
+                    android:text="@string/phase" />
+
+                <Spinner
+                    android:id="@+id/spinner_insulator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:textAlignment="gravity" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/grey_dialog" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/item_text_style"
+                    android:text="@string/insulator_locate" />
+
+                <EditText
+                    android:id="@+id/tv_select_loc"
+                    style="@style/et_item_right"
+                    android:hint="请输入位置" />
+            </RelativeLayout>
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/space_1"-->
+                <!--android:layout_marginTop="@dimen/space_5"-->
+                <!--android:background="@color/grey_dialog" />-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="@dimen/space_50"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/item_text_style"
+                    android:text="@string/repair_check_person" />
+
+                <EditText
+                    android:id="@+id/et_check_person"
+                    style="@style/et_item_right"
+                    android:hint="@string/repair_check_person_input" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/grey_dialog" />
+
+            <include
+                layout="@layout/item_content_describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </include>
+
+            <RadioGroup
+                android:id="@+id/rg_repair_clean"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50">
+
+                <RadioButton
+                    android:id="@+id/repair_clean_before"
+                    style="@style/rb_tower_line"
+                    android:text="清扫前"
+                    />
+
+                <RadioButton
+                    android:id="@+id/repair_clean_after"
+                    style="@style/rb_tower_line"
+                    android:text="清扫后"
+                    />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/grey_dialog" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:minHeight="80dp">
+
+                <com.glens.jksd.utils.imagePick.view.MyGridView
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:listSelector="@color/lucency"
+                    android:numColumns="4"
+                    android:verticalSpacing="@dimen/space_5" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/grey_dialog">
+
+        <include
+            layout="@layout/item_bottom_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_70" />
+    </RelativeLayout>
+
+</RelativeLayout>

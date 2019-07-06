@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_above="@id/ll_rg_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_bg"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_rg_container"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/rg_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_70"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_main"
+                style="@style/bottom_tag_style"
+                android:drawableTop="@drawable/rb_home_drawable_selector"
+                android:gravity="center"
+                android:text="@string/home" />
+
+            <RadioButton
+                android:id="@+id/rb_message"
+                style="@style/bottom_tag_style"
+                android:drawableTop="@drawable/rb_message_selector"
+                android:gravity="center"
+                android:text="@string/message" />
+
+            <RadioButton
+                android:id="@+id/rb_contacts"
+                style="@style/bottom_tag_style"
+                android:drawableTop="@drawable/rb_contact_selector"
+                android:gravity="center"
+                android:text="@string/contacts" />
+
+            <RadioButton
+                android:id="@+id/rb_mine"
+                style="@style/bottom_tag_style"
+                android:drawableTop="@drawable/rb_mine_selector"
+                android:gravity="center"
+                android:text="@string/mine" />
+
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

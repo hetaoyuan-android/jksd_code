@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_50"
+    android:background="@color/grey_background">
+
+    <TextView
+        android:id="@+id/tv_tower_select"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/space_24"
+        android:paddingEnd="@dimen/space_0"
+        android:text="@string/repair_record_scene"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50" />
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"/>
+</RelativeLayout>

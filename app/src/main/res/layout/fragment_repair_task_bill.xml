@@ -1,0 +1,246 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.glens.jksd.fragment.RepairTaskFragments.RepairTaskBillFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/repair_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_60"
+                android:padding="@dimen/space_10">
+
+                <TextView
+                    style="@style/detail_text_setting"
+                    android:text="@string/repair_task_name" />
+
+                <TextView
+                    android:id="@+id/repair_task_name_text"
+                    style="@style/detail_text_show" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_dialog" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_60"
+                android:padding="@dimen/space_10">
+
+                <TextView
+                    style="@style/detail_text_setting"
+                    android:text="@string/repair_power_cut" />
+
+                <TextView
+                    android:id="@+id/repair_power_cut_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/space_10"
+                    android:layout_marginEnd="@dimen/space_10"
+                    android:gravity="center"
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_dialog" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_60"
+                android:padding="@dimen/space_10">
+
+                <TextView
+                    style="@style/detail_text_setting"
+                    android:text="@string/repair_power_cut_area" />
+
+                <TextView
+                    android:id="@+id/repair_power_area_text"
+                    style="@style/detail_text_show" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/grey_dialog" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_60"
+                android:padding="@dimen/space_10">
+
+                <TextView
+                    style="@style/detail_text_setting"
+                    android:text="@string/repair_plan_start_time" />
+
+                <TextView
+                    android:id="@+id/repair_plan_start_time_text"
+                    style="@style/detail_text_show" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/grey_dialog" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_60"
+                android:padding="@dimen/space_10">
+
+                <TextView
+                    style="@style/detail_text_setting"
+                    android:text="@string/repair_plan_end_time" />
+
+                <TextView
+                    android:id="@+id/repair_plan_end_time_text"
+                    style="@style/detail_text_show" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/grey_dialog" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_60"
+                android:padding="@dimen/space_10">
+
+                <TextView
+                    style="@style/detail_text_setting"
+                    android:text="@string/repair_type" />
+
+                <TextView
+                    android:id="@+id/repair_type_text"
+                    style="@style/detail_text_show" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/grey_dialog" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_60"
+                android:padding="@dimen/space_10">
+
+                <TextView
+                    style="@style/detail_text_setting"
+                    android:text="@string/repair_task_create" />
+
+                <TextView
+                    android:id="@+id/repair_task_create_text"
+                    style="@style/detail_text_show" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/grey_dialog" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_60"
+                android:padding="@dimen/space_10">
+
+                <TextView
+                    style="@style/detail_text_setting"
+                    android:text="@string/repair_task_create_time" />
+
+                <TextView
+                    android:id="@+id/repair_task_create_time_text"
+                    style="@style/detail_text_show" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/grey_dialog" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_60"
+                android:padding="@dimen/space_10">
+
+                <TextView
+                    style="@style/detail_text_setting"
+                    android:text="@string/repair_task_class" />
+
+                <TextView
+                    android:id="@+id/repair_task_class_tet"
+                    style="@style/detail_text_show" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/grey_dialog" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_60"
+                android:padding="@dimen/space_10">
+
+                <TextView
+                    style="@style/detail_text_setting"
+                    android:text="@string/repair_construction_organization" />
+
+                <TextView
+                    android:id="@+id/repair_construction_organization_text"
+                    style="@style/detail_text_show" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/grey_dialog" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_60"
+                android:padding="@dimen/space_10">
+
+                <TextView
+                    style="@style/detail_text_setting"
+                    android:text="@string/repair_task_person" />
+
+                <TextView
+                    android:id="@+id/repair_task_person_text"
+                    style="@style/detail_text_show" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:layout_marginBottom="@dimen/space_80"
+                android:background="@color/grey_dialog" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey_dialog">
+
+        <include layout="@layout/item_bottom_submit" />
+    </RelativeLayout>
+</RelativeLayout>

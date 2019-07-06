@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50">
+
+        <TextView
+            android:id="@+id/repair_title_two"
+            style="@style/item_text_style"
+            android:text="@string/repair_equipment_name" />
+
+        <TextView
+            android:id="@+id/repair_equipment"
+            style="@style/et_item_right"
+            android:hint="@string/repair_equipment_name_input" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/grey_dialog"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50">
+
+        <TextView
+            android:id="@+id/repair_title_three"
+            style="@style/item_text_style"
+            android:text="@string/power_level" />
+
+        <TextView
+            android:id="@+id/repair_power_level"
+            style="@style/et_item_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/grey_dialog"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50">
+
+        <TextView
+            android:id="@+id/repair_title_four"
+            style="@style/item_text_style"
+            android:text="@string/phase" />
+
+        <Spinner
+            android:id="@+id/spinner_insulator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_5"
+            android:textAlignment="gravity" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/grey_dialog"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50">
+
+        <TextView
+            android:id="@+id/repair_title_one"
+            style="@style/item_text_style"
+            android:text="@string/insulator_locate" />
+
+        <EditText
+            android:id="@+id/repair_loc"
+            style="@style/et_item_right"
+            android:hint="请输入位置" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="181dp"
+    android:background="@color/white">
+
+    <RadioGroup
+        android:id="@+id/rb_detection_type"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_80">
+        <RadioButton
+            android:id="@+id/rb_spray_before"
+            style="@style/rb_pop_top"
+            android:text="接地电阻"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_spray_one"
+            style="@style/rb_pop_top"
+            android:text="红外测温"
+            />
+        <RadioButton
+            android:id="@+id/rb_spray_two"
+            style="@style/rb_pop_top"
+            android:text="交跨测量"
+            />
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/grey_dialog" />
+    <RadioGroup
+        android:id="@+id/rb_detection_setting"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_70">
+        <RadioButton
+            android:id="@+id/rb_pop_reset"
+            style="@style/rb_pop_submit"
+            android:text="全部"
+            android:textSize="@dimen/text_size18"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_pop_submit"
+            style="@style/rb_pop_submit"
+            android:text="确定"
+            android:textSize="@dimen/text_size18"
+            />
+
+    </RadioGroup>
+</LinearLayout>

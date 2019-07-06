@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="181dp"
+    android:background="@color/white">
+
+    <RadioGroup
+        android:id="@+id/rb_detection_type"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_80">
+        <RadioButton
+            android:id="@+id/rb_spray_technical"
+            style="@style/rb_pop_top"
+            android:text="技改"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_spray_repair"
+            style="@style/rb_pop_top"
+            android:text="大修"
+            />
+        <RadioButton
+            android:id="@+id/rb_spray_daily"
+            style="@style/rb_pop_top"
+            android:text="日常维护"
+            />
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+
+        android:background="@color/grey_dialog" />
+    <RadioGroup
+        android:id="@+id/rb_detection_setting"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_70"
+        android:padding="@dimen/space_10"
+        android:paddingEnd="@dimen/space_20"
+        android:paddingStart="@dimen/space_20">
+        <RadioButton
+            android:id="@+id/rb_pop_reset"
+            style="@style/rb_pop_submit"
+            android:text="重置"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_pop_submit"
+            style="@style/rb_pop_submit"
+            android:text="确定"
+            />
+
+    </RadioGroup>
+
+</LinearLayout>

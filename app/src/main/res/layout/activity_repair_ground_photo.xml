@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fy_check"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.glens.jksd.activity.activity_repair.RepairGroundPhotoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="80dp">
+
+        <com.glens.jksd.utils.imagePick.view.MyGridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:listSelector="@color/lucency"
+            android:numColumns="4"
+            android:verticalSpacing="@dimen/space_5" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@color/grey_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <include
+            layout="@layout/item_bottom_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_80" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.glens.jksd.activity.activity_task_manage.TaskItemActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/ll_rg_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50">
+
+        <RadioGroup
+            android:id="@+id/rg_repair"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_task_bill"
+                style="@style/top_tv_style"
+                android:gravity="center"
+                android:text="基本台账" />
+
+            <RadioButton
+                android:id="@+id/rb_task_log"
+                style="@style/top_tv_style"
+                android:gravity="center"
+                android:text="工作日志" />
+
+
+        </RadioGroup>
+        <View
+            android:background="@color/grey_dialog"
+            android:layout_below="@+id/rg_repair"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:layout_below="@+id/rg_repair"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_task_bill"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_border"
+                android:layout_marginStart="@dimen/space_30"
+                android:layout_marginEnd="@dimen/space_30"
+                android:layout_weight="0.2"
+                android:background="@color/grey_dialog" />
+
+            <TextView
+                android:id="@+id/tv_task_record"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/space_30"
+                android:layout_marginEnd="@dimen/space_30"
+                android:layout_height="@dimen/height_border"
+                android:layout_weight="0.2"
+                android:background="@color/grey_dialog" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_repair_item"
+        android:layout_below="@+id/ll_rg_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</RelativeLayout>

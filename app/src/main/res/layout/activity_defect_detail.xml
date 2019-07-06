@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.activity_repair.stand_detail.SprayDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50">
+
+        <TextView
+            style="@style/item_text_style"
+            android:text="@string/repair_line_name" />
+
+        <TextView
+            android:id="@+id/tv_line_select"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:layout_marginEnd="@dimen/space_10" />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/grey_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1">
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50">
+
+        <TextView
+            style="@style/item_text_style"
+            android:text="@string/tower_number" />
+
+        <TextView
+            android:id="@+id/tv_tower_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:layout_marginEnd="@dimen/space_10" />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/grey_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1">
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50">
+
+        <TextView
+            style="@style/item_text_style"
+            android:text="@string/tower_creater" />
+
+        <TextView
+            android:id="@+id/tv_tower_create"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:layout_marginEnd="@dimen/space_10" />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/grey_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1">
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50">
+
+        <TextView
+            style="@style/item_text_style"
+            android:text="@string/tower_create_time" />
+
+        <TextView
+            android:id="@+id/tv_tower_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:layout_marginEnd="@dimen/space_10" />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/grey_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_repair_content_title"
+            style="@style/item_text_style"
+            android:text="@string/content_describe" />
+
+        <TextView
+            android:id="@+id/et_repair_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:layout_marginEnd="@dimen/space_10" />
+
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/grey_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1">
+
+    </View>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/item_repair_pic">
+    </include>
+</LinearLayout>

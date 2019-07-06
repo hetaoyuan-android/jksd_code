@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.glens.jksd.activity.activity_task_manage.TaskLogAddActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50">
+
+                <TextView
+                    style="@style/item_text_style"
+                    android:text="@string/task_log_title" />
+
+                <EditText
+                    android:id="@+id/bt_line_select"
+                    style="@style/et_item_right"
+                    android:hint="@string/repair_equipment_name_input" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/grey_dialog"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50">
+
+                <TextView
+                    style="@style/item_text_style"
+                    android:text="@string/task_log_place" />
+
+                <EditText
+                    android:id="@+id/tv_tower_select"
+                    style="@style/et_item_right"
+                    android:hint="@string/repair_equipment_name_input"
+                    android:inputType="textMultiLine" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_5"
+                android:background="@color/grey_dialog">
+
+            </View>
+
+            <include
+                layout="@layout/item_content_describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </include>
+
+            <include
+                layout="@layout/item_repair_record"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/view_bg" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_50"
+                    android:layout_marginStart="@dimen/space_10"
+                    android:gravity="center|left"
+                    android:text="现场视频"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/view_bg" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="@dimen/space_100"
+                android:layout_height="@dimen/space_100"
+                android:layout_margin="@dimen/space_10"
+                android:background="@drawable/repair_takepic" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_8"
+                android:background="@color/view_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_repair_fix_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_50"
+                    android:layout_marginStart="@dimen/space_10"
+                    android:gravity="center|left"
+                    android:text="现场照片"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/view_bg" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/space_100">
+                <Button
+                    android:layout_width="@dimen/space_100"
+                    android:layout_height="@dimen/space_100"
+                    android:layout_margin="@dimen/space_10"
+
+                    android:background="@drawable/repair_takepic" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:layout_gravity="bottom"
+        layout="@layout/item_bottom_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_80" />
+
+</FrameLayout>

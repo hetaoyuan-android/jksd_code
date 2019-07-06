@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.glens.jksd.activity.activity_repair.RepairGroundWorkDownActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/item_repair_record"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_5"
+            android:layout_marginTop="@dimen/space_5"
+            android:background="@color/grey_dialog" />
+
+
+        <RadioGroup
+            android:id="@+id/rg_repair_ground"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50">
+
+            <RadioButton
+                android:id="@+id/repair_ground_one"
+                style="@style/rb_tower_line"
+                android:text="@string/message"
+                />
+
+            <RadioButton
+                style="@style/rb_tower_line"
+                android:text="@string/message"
+                />
+            <RadioButton
+                style="@style/rb_tower_line"
+                android:text="@string/message"
+                />
+            <RadioButton
+                style="@style/rb_tower_line"
+                android:text="@string/message"
+                />
+            <RadioButton
+                style="@style/rb_tower_line"
+                android:text="@string/message"
+                />
+
+
+        </RadioGroup>
+
+        <View
+            android:background="@color/grey_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1">
+        </View>
+
+
+        <Button
+            android:layout_margin="@dimen/space_10"
+            android:background="@drawable/repair_takepic"
+            android:layout_width="@dimen/space_100"
+            android:layout_height="@dimen/space_100" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_5"
+            android:layout_marginTop="@dimen/space_5"
+            android:background="@color/grey_dialog" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:background="@color/grey_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <include
+            layout="@layout/item_bottom_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_80" />
+    </RelativeLayout>
+
+</FrameLayout>

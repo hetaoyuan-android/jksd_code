@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ry_information"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.activity_repair.stand_add.RepairAddInformationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50">
+
+            <TextView
+                style="@style/item_text_style"
+                android:text="@string/repair_record_scene" />
+
+            <ImageView
+                android:id="@+id/bt_repair_record"
+                android:layout_width="@dimen/space_20"
+                android:layout_height="@dimen/space_30"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/space_10"
+                android:background="@drawable/repair_record" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/repair_record_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:layout_marginTop="@dimen/space_10"
+            android:background="@color/grey_dialog"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/ry_repair_record"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_40"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_repair_record_trumpet"
+                android:layout_width="@dimen/space_30"
+                android:layout_height="@dimen/space_30"
+                android:layout_gravity="center"
+                android:paddingStart="@dimen/space_10"
+                android:paddingTop="@dimen/space_10"
+                android:paddingEnd="@dimen/space_0"
+                android:src="@drawable/trumpet" />
+
+            <ProgressBar
+                android:id="@+id/pb_repair_record"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_30"
+                android:layout_margin="@dimen/space_10"
+                android:layout_toStartOf="@+id/iv_repair_record_delete"
+                android:layout_toEndOf="@+id/iv_repair_record_trumpet"
+                android:progressDrawable="@drawable/progressbar_record" />
+
+            <Chronometer
+                android:id="@+id/cm_repair_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_50"
+                android:layout_marginTop="@dimen/space_10"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/iv_repair_record_delete"
+                android:layout_width="@dimen/space_30"
+                android:layout_height="@dimen/space_40"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/space_5"
+                android:src="@drawable/repair_delete" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ry_repair_record_two"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_40"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_repair_record_trumpet_two"
+                android:layout_width="@dimen/space_20"
+                android:layout_height="@dimen/space_20"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_10"
+                android:src="@drawable/trumpet" />
+
+            <ProgressBar
+                android:id="@+id/pb_repair_record_two"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_30"
+                android:layout_margin="@dimen/space_10"
+                android:layout_toStartOf="@+id/iv_repair_record_delete_two"
+                android:layout_toEndOf="@+id/iv_repair_record_trumpet_two"
+                android:progressDrawable="@drawable/progressbar_record" />
+
+            <Chronometer
+                android:id="@+id/cm_repair_record_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_50"
+                android:layout_marginTop="@dimen/space_10"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/iv_repair_record_delete_two"
+                android:layout_width="@dimen/space_30"
+                android:layout_height="@dimen/space_40"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/space_5"
+                android:src="@drawable/repair_delete" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ry_repair_record_three"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_40"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_repair_record_trumpet_three"
+                android:layout_width="@dimen/space_20"
+                android:layout_height="@dimen/space_20"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_10"
+                android:src="@drawable/trumpet" />
+
+            <ProgressBar
+                android:id="@+id/pb_repair_record_three"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_30"
+                android:layout_margin="@dimen/space_10"
+                android:layout_toStartOf="@+id/iv_repair_record_delete_three"
+                android:layout_toEndOf="@+id/iv_repair_record_trumpet_three"
+                android:progressDrawable="@drawable/progressbar_record" />
+
+            <Chronometer
+                android:id="@+id/cm_repair_record_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_50"
+                android:layout_marginTop="@dimen/space_10"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/iv_repair_record_delete_three"
+                android:layout_width="@dimen/space_30"
+                android:layout_height="@dimen/space_40"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/space_5"
+                android:src="@drawable/repair_delete" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_5"
+            android:layout_marginTop="@dimen/space_5"
+            android:background="@color/grey_dialog" />
+
+
+        <RadioGroup
+            android:id="@+id/rg_repair_information"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50">
+
+            <RadioButton
+                android:id="@+id/repair_information_record"
+                style="@style/rb_tower_line"
+                android:text="交底记录"
+                />
+
+            <RadioButton
+                android:id="@+id/repair_information_method"
+                style="@style/rb_tower_line"
+                android:text="施工三措"
+                />
+            <RadioButton
+                android:id="@+id/repair_information_work"
+                style="@style/rb_tower_line"
+                android:text="工作票"
+                />
+            <RadioButton
+                android:id="@+id/repair_information_others"
+                style="@style/rb_tower_line"
+                android:text="其他"
+                />
+        </RadioGroup>
+
+        <View
+            android:background="@color/grey_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1">
+        </View>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_80"
+            android:background="@color/white"
+            android:minHeight="80dp">
+
+            <com.glens.jksd.utils.imagePick.view.MyGridView
+                android:id="@+id/grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:listSelector="@color/lucency"
+                android:numColumns="4"
+                android:verticalSpacing="@dimen/space_5" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/grey_dialog">
+
+        <include
+            layout="@layout/item_bottom_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_80" />
+    </RelativeLayout>
+</RelativeLayout>

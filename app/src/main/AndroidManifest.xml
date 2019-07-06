@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.glens.jksd">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".PowerApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_desk"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activity.activity_detect.ImageShowActivity"></activity>
+        <activity android:name=".activity.activity_repair.SelectLineActivity" />
+        <activity android:name=".activity.activity_repair.stand_detail.InformationDetailActivity"></activity>
+        <activity android:name=".activity.activity_repair.stand_add.RepairAddInformationActivity" />
+        <activity android:name=".activity.activity_repair.stand_add.WaterTestAddActivity" />
+        <activity android:name=".activity.activity_repair.stand_add.AddInsulatorCleanActivity" />
+        <activity android:name=".activity.activity_repair.stand_detail.GroundDetailActivity" />
+        <activity android:name=".activity.activity_repair.stand_detail.RecordDetailActivity" />
+        <activity android:name=".activity.activity_repair.stand_detail.RepairTaskDetailActivity" />
+        <activity android:name=".activity.activity_detect.PayMeasureDetailActivity" />
+        <activity android:name=".activity.activity_detect.InfraredDetailActivity" />
+        <activity android:name=".activity.activity_detect.GroundResistanceDetailActivity" />
+        <activity android:name=".activity.activity_repair.stand_detail.WaterTestDetailActivity" />
+        <activity android:name=".activity.activity_repair.stand_detail.TraceCheckDetailActivity" />
+        <activity android:name=".activity.activity_repair.stand_detail.InsulatorDetailActivity" />
+        <activity android:name=".activity.activity_repair.stand_detail.SprayDetailActivity" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/network_security_config" />
+
+        <activity android:name=".activity.activity_repair.stand_detail.RepairDefectDetailActivity" />
+        <activity android:name=".activity.activity_repair.stand_detail.RepairTowerDetailActivity" />
+        <activity android:name=".utils.imagePick.view.ImageBucketChooseActivity" />
+        <activity android:name=".utils.imagePick.view.ImageChooseActivity" />
+        <activity android:name=".utils.imagePick.view.ImageZoomActivity" /> <!-- <activity android:name=".activity.LoginActivity" /> -->
+        <activity android:name=".activity.activity_task_manage.TaskLogAddActivity" />
+        <activity android:name=".activity.activity_task_manage.TaskItemActivity" />
+        <activity android:name=".activity.activity_task_manage.TaskManageActivity" />
+        <activity android:name=".activity.activity_repair.RepairGroundWorkDownActivity" />
+        <activity android:name=".activity.activity_repair.RepairSelectActivity" />
+        <activity android:name=".activity.activity_detect.DetectionManagerGroundNoDisposeActivity" />
+        <activity
+            android:name=".activity.activity_detect.DetecionManagerGroundResistanceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.activity_detect.DetectionPayMeasureNoDisposeActivity" />
+        <activity
+            android:name=".activity.activity_detect.DetectionManagerPayAcrossMeasureActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.activity_detect.DetectionManagerInfraredNoDisposeActivity" />
+        <activity
+            android:name=".activity.activity_detect.DetectionManagerInfraredActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.activity_repair.stand_add.RepairAddRecordActivity" />
+        <activity android:name=".activity.activity_repair.stand_add.RepairAddSprayActivity" />
+        <activity android:name=".activity.activity_repair.stand_add.RepairLineCheckActivity" />
+        <activity android:name=".activity.activity_repair.stand_detail.RepairFixDetailActivity" />
+        <activity android:name=".activity.activity_repair.stand_add.RepairFixActivity" />
+        <activity
+            android:name=".activity.activity_repair.stand_add.RepairTowerAddActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.activity_repair.RepairStandardTaskActivity" />
+        <activity android:name=".activity.activity_repair.RepairGroundPhotoActivity" />
+        <activity
+            android:name=".activity.activity_repair.stand_add.RepairAddGroundActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.activity_repair.stand_add.RepairAddCheckActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.activity_repair.RepairTaskItemActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.activity_repair.RepairTaskActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.activity_detect.DetectionManagerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+
+        <service android:name=".service.RecordingService" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

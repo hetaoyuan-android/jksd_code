@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_repair_record"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50">
+
+        <TextView
+            android:id="@+id/tv_record_title"
+            style="@style/item_text_style"
+            android:text="@string/repair_record_scene" />
+
+        <ImageView
+            android:id="@+id/bt_repair_record"
+            android:layout_width="@dimen/space_40"
+            android:layout_height="@dimen/space_50"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/space_10"
+            android:scaleType="centerCrop"
+            android:src="@drawable/repair_record" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/repair_record_line"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@color/grey_dialog" />
+
+    <RelativeLayout
+        android:id="@+id/ry_repair_record"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40">
+
+        <ImageView
+            android:id="@+id/iv_repair_record_trumpet"
+            android:paddingStart="@dimen/space_10"
+            android:paddingEnd="@dimen/space_0"
+            android:paddingTop="@dimen/space_10"
+            android:layout_gravity="center"
+            android:src="@drawable/trumpet"
+            android:layout_width="@dimen/space_30"
+            android:layout_height="@dimen/space_30" />
+        <ProgressBar
+            android:id="@+id/pb_repair_record"
+            android:layout_toStartOf="@+id/iv_repair_record_delete"
+            android:layout_toEndOf="@+id/iv_repair_record_trumpet"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_margin="@dimen/space_10"
+            android:layout_width="match_parent"
+            android:progressDrawable="@drawable/progressbar_record"
+            android:layout_height="@dimen/space_30" />
+        <Chronometer
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/space_50"
+            android:layout_marginTop="@dimen/space_10"
+            android:id="@+id/cm_repair_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_repair_record_delete"
+            android:src="@drawable/repair_delete"
+            android:layout_alignParentEnd="true"
+            android:layout_width="@dimen/space_30"
+            android:padding="@dimen/space_5"
+            android:layout_height="@dimen/space_40" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ry_repair_record_two"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40">
+
+        <ImageView
+            android:id="@+id/iv_repair_record_trumpet_two"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginStart="@dimen/space_10"
+            android:layout_gravity="center"
+            android:src="@drawable/trumpet"
+            android:layout_width="@dimen/space_20"
+            android:layout_height="@dimen/space_20" />
+        <ProgressBar
+            android:id="@+id/pb_repair_record_two"
+            android:layout_toStartOf="@+id/iv_repair_record_delete_two"
+            android:layout_toEndOf="@+id/iv_repair_record_trumpet_two"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_margin="@dimen/space_10"
+            android:layout_width="match_parent"
+            android:progressDrawable="@drawable/progressbar_record"
+            android:layout_height="@dimen/space_30" />
+        <Chronometer
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/space_50"
+            android:layout_marginTop="@dimen/space_10"
+            android:id="@+id/cm_repair_record_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_repair_record_delete_two"
+            android:src="@drawable/repair_delete"
+            android:layout_alignParentEnd="true"
+            android:layout_width="@dimen/space_30"
+            android:padding="@dimen/space_5"
+            android:layout_height="@dimen/space_40" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ry_repair_record_three"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40">
+
+        <ImageView
+            android:id="@+id/iv_repair_record_trumpet_three"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginStart="@dimen/space_10"
+            android:layout_gravity="center"
+            android:src="@drawable/trumpet"
+            android:layout_width="@dimen/space_20"
+            android:layout_height="@dimen/space_20" />
+        <ProgressBar
+            android:id="@+id/pb_repair_record_three"
+            android:layout_toStartOf="@+id/iv_repair_record_delete_three"
+            android:layout_toEndOf="@+id/iv_repair_record_trumpet_three"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_margin="@dimen/space_10"
+            android:layout_width="match_parent"
+            android:progressDrawable="@drawable/progressbar_record"
+            android:layout_height="@dimen/space_30" />
+        <Chronometer
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/space_50"
+            android:layout_marginTop="@dimen/space_10"
+            android:id="@+id/cm_repair_record_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_repair_record_delete_three"
+            android:src="@drawable/repair_delete"
+            android:layout_alignParentEnd="true"
+            android:layout_width="@dimen/space_30"
+            android:padding="@dimen/space_5"
+            android:layout_height="@dimen/space_40" />
+    </RelativeLayout>
+
+</LinearLayout>

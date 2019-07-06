@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        applicationId "com.glens.jksd"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        //为flavor设置一个版本名称
+        flavorDimensions "jksd"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions { includeCompileClasspath = true }
+        }
+    }
+    buildTypes {
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            versionNameSuffix "_weteam_debug"
+            //混淆
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+            shrinkResources false
+            versionNameSuffix ".dev"
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            debuggable false
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        instant {
+            minSdkVersion 19
+        }
+        app {
+            minSdkVersion 17
+        }
+
+        applicationVariants.all {
+            variant ->
+                variant.outputs.all {
+                    outputFileName = "jksd_" + defaultConfig.versionName + "_" + new Date().format("yyyy-MM-dd") + "_" + buildType.name + ".apk"
+                }
+        }
+    }
+
+    dexOptions {
+        preDexLibraries = false//预编译设置
+    }
+
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.android.support:design:28.0.0'
+    //将网络请求转化成java bean对象 也可以自定义
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.0.0'
+    //retrofit和rxAndroid连接
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    //butterKnife支持
+    implementation 'com.jakewharton:butterknife:7.0.1'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    // RxAndroid
+    implementation 'io.reactivex:rxandroid:1.1.0'
+    implementation 'org.xutils:xutils:3.3.26'
+    implementation 'org.jetbrains:annotations-java5:15.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'com.jzxiang.pickerview:TimePickerDialog:1.0.1'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'com.alibaba:fastjson:1.1.63.android'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+    // 图片
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation project(path: ':imagepicker')
+    // photoview
+    implementation 'com.github.chrisbanes.photoview:library:1.2.4'
+    // 上拉，下拉刷新的
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-14'//没有使用特殊Header，可以不加这行
+
+}

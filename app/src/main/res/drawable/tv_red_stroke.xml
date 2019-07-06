@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:radius="@dimen/space_5" /> <!-- 设置四个角的半径 -->
+
+    <!-- 边框 -->
+    <stroke
+        android:width="0.5dp"
+        android:color="@color/tv_drawable_red" />
+</shape>

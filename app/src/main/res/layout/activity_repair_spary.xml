@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fy_spray"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.glens.jksd.activity.activity_repair.stand_add.RepairAddSprayActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/item_select_four"/>
+
+            <View
+                android:background="@color/grey_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_5">
+            </View>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/item_content_describe">
+            </include>
+
+            <RadioGroup
+                android:id="@+id/rg_spray_add"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50">
+
+                <RadioButton
+                    android:id="@+id/rb_spray_before"
+                    style="@style/rb_tower_line"
+                    android:text="@string/repair_spray_before"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_spray_one"
+                    style="@style/rb_tower_line"
+                    android:text="@string/repair_spray_one"
+                    />
+                <RadioButton
+                    android:id="@+id/rb_spray_two"
+                    style="@style/rb_tower_line"
+                    android:text="@string/repair_spray_two"
+                    />
+            </RadioGroup>
+
+            <View
+                android:background="@color/grey_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1">
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:minHeight="80dp">
+
+                <com.glens.jksd.utils.imagePick.view.MyGridView
+                    android:id="@+id/spray_grid_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:listSelector="@color/lucency"
+                    android:numColumns="4"
+                    android:verticalSpacing="@dimen/space_5" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:background="@color/grey_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <include
+            layout="@layout/item_bottom_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_80" />
+    </RelativeLayout>
+</FrameLayout>

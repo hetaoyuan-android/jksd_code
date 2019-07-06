@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="181dp"
+    android:background="@color/white">
+
+    <RadioGroup
+        android:id="@+id/rb_detection_type"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_80">
+        <RadioButton
+            android:id="@+id/rb_measure_road"
+            style="@style/rb_pop_top"
+            android:text="@string/step_road"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_measure_railway"
+            style="@style/rb_pop_top"
+            android:text="@string/step_railway"
+            />
+        <RadioButton
+            android:id="@+id/rb_measure_imp_channel"
+            style="@style/rb_pop_top"
+            android:text="@string/step_important_channel"
+            />
+        <RadioButton
+            android:id="@+id/rb_measure_river"
+            style="@style/rb_pop_top"
+            android:text="@string/step_river"
+            />
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/grey_dialog" />
+    <RadioGroup
+        android:id="@+id/rb_detection_setting"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_70">
+        <RadioButton
+            android:id="@+id/rb_ground_all"
+            style="@style/rb_pop_submit"
+            android:text="@string/all"
+            android:textSize="@dimen/text_size18"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_ground_sure"
+            style="@style/rb_pop_submit"
+            android:text="@string/sure"
+            android:textSize="@dimen/text_size18"
+            />
+
+    </RadioGroup>
+</LinearLayout>

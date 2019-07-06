@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fy_water_test"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.activity_repair.stand_add.WaterTestAddActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/item_select_four"/>
+            <View
+                android:background="@color/grey_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1">
+            </View>
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50">
+
+                <TextView
+                    style="@style/item_text_style"
+                    android:text="@string/test_conclusion" />
+
+                <EditText
+                    android:id="@+id/et_text_conclusion"
+                    style="@style/et_item_right"
+                    android:hint="@string/repair_test_conclusion_input" />
+            </RelativeLayout>
+
+            <View
+                android:background="@color/grey_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_5">
+            </View>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/item_content_describe">
+            </include>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/item_repair_pic">
+            </include>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:background="@color/grey_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <include
+            layout="@layout/item_bottom_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_80" />
+    </RelativeLayout>
+</FrameLayout>

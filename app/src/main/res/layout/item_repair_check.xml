@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ry_repair_check"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/space_10">
+
+
+    <ImageView
+        android:id="@+id/repair_task_check"
+        android:layout_width="@dimen/space_50"
+        android:layout_height="@dimen/space_50"
+        android:src="@drawable/repair_daily_maintenance" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space_50"
+        android:layout_marginStart="@dimen/space_8"
+        android:layout_toEndOf="@+id/repair_task_check">
+
+        <TextView
+            android:id="@+id/repair_task_check_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/repair_standard_task_information"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size20" />
+
+        <TextView
+            android:id="@+id/repair_check_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/repair_task_check_name"
+            android:text="@string/repair_task"
+            android:textSize="@dimen/text_size16" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:padding="@dimen/space_5"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space_70"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/repair_task_state"
+            android:visibility="gone"
+            android:padding="@dimen/space_2"
+            android:background="@drawable/tv_green_stroke"
+            android:textColor="@color/text_green"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/space_60"
+            android:layout_height="@dimen/space_24"
+            android:text="@string/message"
+            android:textSize="@dimen/text_size16" />
+
+        <TextView
+            android:id="@+id/repair_task_check_username"
+            android:paddingTop="@dimen/space_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/repair_person"
+            android:drawablePadding="@dimen/space_5"
+            android:textSize="@dimen/text_size16"
+            android:text="@string/repair_task" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_below="@id/repair_task_check"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@color/grey_dialog" />
+</RelativeLayout>

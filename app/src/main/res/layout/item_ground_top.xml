@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_140"
+    android:layout_margin="@dimen/space_10"
+    android:background="@color/grey_dialog">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/repair_accept" />
+
+    <LinearLayout
+        android:id="@+id/ly_ground_message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:layout_marginTop="@dimen/space_10"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="领用人："
+            android:textSize="@dimen/text_size16" />
+
+        <TextView
+            android:id="@+id/tv_ground_accept_person"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="赵三"
+            android:textSize="@dimen/text_size16" />
+
+        <View
+            android:layout_width="@dimen/space_1"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/space_10"
+            android:background="@color/textColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/space_10"
+            android:text="时间："
+            android:textSize="@dimen/text_size16" />
+
+        <TextView
+            android:id="@+id/tv_ground_accept_time"
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/space_10"
+            android:drawableEnd="@drawable/location"
+            android:drawablePadding="@dimen/space_10"
+            android:text="时间："
+            android:textSize="@dimen/text_size16" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/space_60"
+        android:layout_height="@dimen/space_60"
+        android:layout_below="@+id/ly_ground_message"
+        android:layout_margin="@dimen/space_10"
+        android:src="@drawable/repair_daily_maintenance" />
+</RelativeLayout>

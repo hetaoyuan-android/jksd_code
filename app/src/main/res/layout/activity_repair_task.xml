@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.glens.jksd.activity.activity_repair.RepairTaskActivity">
+
+    <RelativeLayout
+        android:id="@+id/repair_task_ry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_50"
+        android:background="@color/white">
+
+        <include
+            android:id="@+id/repair_task_include"
+            layout="@layout/search" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_40"
+            android:layout_below="@+id/repair_task_include"
+            android:layout_marginTop="@dimen/space_5"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_5">
+
+            <TextView
+                android:id="@+id/repair_task_start_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:drawableEnd="@drawable/down"
+                android:gravity="center"
+                android:paddingStart="@dimen/space_5"
+                android:paddingEnd="@dimen/space_10"
+                android:text="@string/start_time"
+                android:textSize="@dimen/text_size16" />
+
+            <TextView
+                android:id="@+id/repair_task_end_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:drawableEnd="@drawable/down"
+                android:gravity="center"
+                android:paddingStart="@dimen/space_5"
+                android:paddingEnd="@dimen/space_10"
+                android:text="@string/end_time"
+                android:textSize="@dimen/text_size16" />
+
+            <TextView
+                android:id="@+id/repair_task_type"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:drawableEnd="@drawable/down"
+                android:gravity="center"
+                android:paddingStart="@dimen/space_5"
+                android:paddingEnd="@dimen/space_10"
+                android:text="@string/repair_type"
+                android:textSize="@dimen/text_size16" />
+
+            <TextView
+                android:id="@+id/repair_task_department"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:drawableEnd="@drawable/down"
+                android:gravity="center"
+                android:paddingStart="@dimen/space_5"
+                android:paddingEnd="@dimen/space_10"
+                android:text="@string/repair_belong_department"
+                android:textSize="@dimen/text_size16" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_border"
+            android:layout_below="@id/linearLayout"
+            android:background="@color/view_bg" />
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_repair_bottom_hint"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_bg"
+        android:gravity="center"
+        android:text="共32条记录，红外测温8个，交跨测量14个，接地电阻10个"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size14" />
+</RelativeLayout>

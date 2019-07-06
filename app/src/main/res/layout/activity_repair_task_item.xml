@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.glens.jksd.activity.activity_repair.RepairTaskItemActivity">
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/ll_rg_container"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_55"
+            android:background="@color/white">
+
+            <HorizontalScrollView
+                android:id="@+id/sv_repair_task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                >
+                <RadioGroup
+                    android:id="@+id/rg_repair"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_repair_task_bill"
+                        style="@style/horizontal_tv_style"
+                        android:gravity="center"
+                        android:text="@string/repair_task_bill" />
+
+                    <RadioButton
+                        android:id="@+id/rb_repair_task_check"
+                        style="@style/horizontal_tv_style"
+                        android:gravity="center"
+                        android:text="@string/repair_task_check" />
+
+                    <RadioButton
+                        android:id="@+id/rb_repair_records"
+                        style="@style/horizontal_tv_style"
+                        android:gravity="center"
+                        android:text="@string/repair_records" />
+
+                    <RadioButton
+                        android:id="@+id/rb_repair_ground_manage"
+                        style="@style/horizontal_tv_style"
+                        android:gravity="center"
+                        android:text="@string/repair_ground_manage" />
+
+                    <RadioButton
+                        android:id="@+id/rb_repair_information"
+                        style="@style/horizontal_tv_style"
+                        android:gravity="center"
+                        android:text="@string/repair_information" />
+
+                </RadioGroup>
+            </HorizontalScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_5"
+                android:layout_below="@+id/sv_repair_task"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_bill"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_border"
+                    android:layout_weight="0.2"
+                    android:background="@color/grey_hint" />
+
+                <TextView
+                    android:id="@+id/tv_check"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_border"
+                    android:layout_weight="0.2"
+                    android:background="@color/grey_dialog" />
+
+                <TextView
+                    android:id="@+id/tv_records"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_border"
+                    android:layout_weight="0.2"
+                    android:background="@color/grey_dialog" />
+
+                <TextView
+                    android:id="@+id/tv_ground"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_border"
+                    android:layout_weight="0.2"
+                    android:background="@color/grey_dialog" />
+
+                <TextView
+                    android:id="@+id/tv_information"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_border"
+                    android:layout_weight="0.2"
+                    android:background="@color/grey_dialog" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+    <FrameLayout
+        android:id="@+id/fl_repair_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@+id/ll_rg_container"/>
+</RelativeLayout>

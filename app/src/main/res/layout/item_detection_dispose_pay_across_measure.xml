@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_pay_measure_main"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_marginStart="@dimen/space_10"
+    android:layout_marginTop="@dimen/space_10"
+    android:layout_marginEnd="@dimen/space_10"
+    android:background="@drawable/main_bg_gridview"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/im_no_dispose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dispose"></ImageView>
+
+    <LinearLayout
+        android:id="@+id/ll_dispose_content"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space_80"
+        android:layout_toRightOf="@id/im_no_dispose"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_dispose_measure_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:text="35Kv大明线5#-6#"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size20" />
+
+            <TextView
+                android:id="@+id/tv_dispose_measure_cross_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@drawable/step_high_speed"
+                android:padding="@dimen/space_3"
+                android:layout_marginEnd="@dimen/space_5"
+                android:text="@string/step_road"
+                android:textColor="@color/step_high_speed"
+                android:textSize="@dimen/text_size16" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_dispose_measure_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张三"
+                android:textColor="@color/hint_text"
+                android:textSize="@dimen/text_size16" />
+
+            <View
+                android:layout_width="@dimen/space_1"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/space_20"
+                android:background="@color/grey_hint" />
+
+            <TextView
+                android:id="@+id/tv_dispose_measure_depart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_20"
+                android:text="监理一部"
+                android:textColor="@color/hint_text"
+                android:textSize="@dimen/text_size16" />
+
+            <View
+                android:layout_width="@dimen/space_1"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/space_20"
+                android:background="@color/grey_hint" />
+
+            <TextView
+                android:id="@+id/tv_dispose_measure_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_10"
+                android:text="2019-4-25 09:48:10"
+                android:textColor="@color/hint_text"
+                android:textSize="@dimen/text_size14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_dispose"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ll_dispose_content"
+        android:layout_marginStart="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_2"
+        android:layout_marginEnd="@dimen/space_20"
+        android:background="@color/view_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_below="@id/view_dispose"
+        android:layout_marginTop="@dimen/space_15"
+        android:layout_marginBottom="@dimen/space_15"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/space_8">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/space_15"
+                    android:layout_height="@dimen/space_15"
+                    android:layout_marginEnd="@dimen/space_5"
+                    android:src="@drawable/environment_temper" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/environment_temper"
+                    android:textColor="@color/hint_text"
+                    android:textSize="@dimen/text_size16" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_dispose_measure_env"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_15"
+                android:text="22.1"
+                android:textColor="@color/hint_text"
+                android:textSize="@dimen/text_size16" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/space_1"
+            android:layout_height="@dimen/space_60"
+            android:background="@color/view_bg" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/space_5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/space_15"
+                    android:layout_height="@dimen/space_15"
+                    android:layout_marginEnd="@dimen/space_5"
+                    android:src="@drawable/pay_across_distance" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pay_across_distance"
+                    android:textColor="@color/hint_text"
+                    android:textSize="@dimen/text_size16" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_dispose_measure_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_15"
+                android:text="562米"
+                android:textColor="@color/hint_text"
+                android:textSize="@dimen/text_size16" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/space_1"
+            android:layout_height="@dimen/space_60"
+            android:background="@color/view_bg" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/space_5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/space_15"
+                    android:layout_height="@dimen/space_15"
+                    android:layout_marginEnd="@dimen/space_5"
+                    android:src="@drawable/is_qualified" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/is_qualified"
+                    android:textColor="@color/hint_text"
+                    android:textSize="@dimen/text_size16" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_dispose_measure_is_qualified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_15"
+                android:text="合格"
+                android:textColor="@color/hint_text"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

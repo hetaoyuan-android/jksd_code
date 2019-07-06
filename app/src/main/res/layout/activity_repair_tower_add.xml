@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ry_tower"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.glens.jksd.activity.activity_repair.stand_add.RepairTowerAddActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50">
+
+                <TextView
+                    style="@style/item_text_style"
+                    android:text="线路名称" />
+
+                <TextView
+                    android:id="@+id/tv_line_select"
+                    style="@style/et_item_right"
+                    android:hint="@string/repair_line_select" />
+            </RelativeLayout>
+
+            <View
+                android:background="@color/grey_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1">
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50">
+
+                <TextView
+                    style="@style/item_text_style"
+                    android:text="杆塔名称" />
+
+                <TextView
+                    android:id="@+id/tv_tower_select"
+                    style="@style/et_item_right" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/grey_dialog" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/item_text_style"
+                    android:text="@string/power_level" />
+
+                <TextView
+                    android:id="@+id/et_power_level"
+                    style="@style/et_item_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/grey_dialog" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/item_text_style"
+                    android:text="@string/phase" />
+
+                <Spinner
+                    android:id="@+id/spinner_insulator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:textAlignment="gravity" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/grey_dialog" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50">
+
+                <TextView
+                    style="@style/item_text_style"
+                    android:text="@string/insulator_locate" />
+
+                <EditText
+                    android:id="@+id/et_select_loc"
+                    style="@style/et_item_right"
+                    android:hint="@string/repair_select_locate" />
+            </RelativeLayout>
+
+            <View
+                android:background="@color/grey_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_5">
+
+            </View>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/item_content_describe">
+
+            </include>
+
+            <RadioGroup
+                android:id="@+id/rg_repair_tower"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50">
+
+                <RadioButton
+                    android:id="@+id/repair_tower_one"
+                    style="@style/rb_tower_line"
+                    android:text="杆号牌"
+                    />
+
+                <RadioButton
+                    style="@style/rb_tower_line"
+                    android:text="耐张串"
+                    />
+                <RadioButton
+                    style="@style/rb_tower_line"
+                    android:text="条线串"
+                    />
+                <RadioButton
+                    style="@style/rb_tower_line"
+                    android:text="直线串"
+                    />
+                <RadioButton
+                    style="@style/rb_tower_line"
+                    android:text="地线"
+                    />
+
+            </RadioGroup>
+
+            <View
+                android:background="@color/grey_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1">
+            </View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/space_80"
+                android:minHeight="80dp">
+
+                <com.glens.jksd.utils.imagePick.view.MyGridView
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:listSelector="@color/lucency"
+                    android:numColumns="4"
+                    android:verticalSpacing="@dimen/space_5" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:background="@color/grey_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            layout="@layout/item_bottom_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_80" />
+    </RelativeLayout>
+
+</RelativeLayout>

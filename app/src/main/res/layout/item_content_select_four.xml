@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40">
+
+        <TextView
+            android:id="@+id/tv_repair_line"
+            style="@style/item_text_style"
+            android:text="@string/repair_line_name" />
+
+        <TextView
+            android:id="@+id/tv_repair_item"
+            style="@style/et_item_right"
+            android:layout_toEndOf="@+id/tv_repair_line"
+            android:hint="@string/repair_line_select" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/grey_dialog" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40">
+
+        <TextView
+            android:id="@+id/tv_tower_name"
+            style="@style/item_text_style"
+            android:text="@string/repair_line_name" />
+
+        <TextView
+            android:id="@+id/tower_select"
+            style="@style/et_item_right"
+            android:layout_toEndOf="@+id/tv_tower_name"
+            android:hint="@string/repair_line_select" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/grey_dialog" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40">
+
+        <TextView
+            android:id="@+id/tv_repair_position"
+            style="@style/item_text_style"
+            android:text="@string/repair_line_name" />
+
+        <TextView
+            android:id="@+id/tv_position_select"
+            style="@style/et_item_right"
+            android:layout_toEndOf="@+id/tv_repair_position"
+            android:hint="@string/repair_line_select" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/grey_dialog" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40">
+
+        <TextView
+            android:id="@+id/tv_power_type"
+            style="@style/item_text_style"
+            android:text="@string/repair_line_name" />
+
+        <TextView
+            android:id="@+id/tv_power_type_selct"
+            style="@style/et_item_right"
+            android:layout_toEndOf="@+id/tv_power_type"
+            android:hint="@string/repair_line_select" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/grey_dialog" />
+</LinearLayout>

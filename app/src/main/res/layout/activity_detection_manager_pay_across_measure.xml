@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/search" />
+
+    <RelativeLayout
+        android:id="@+id/rl_pay_measure_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginBottom="@dimen/space_10"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="@dimen/space_5">
+
+        <TextView
+            android:id="@+id/tv_pay_dispose_state"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableEnd="@drawable/down"
+            android:drawablePadding="@dimen/space_5"
+            android:gravity="center"
+            android:paddingStart="@dimen/space_60"
+            android:paddingEnd="@dimen/space_30"
+            android:text="@string/detect_process_state"
+            android:textColor="@color/slide_text"
+            android:textSize="@dimen/text_size16" />
+
+        <TextView
+            android:id="@+id/tv_pay_type"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/space_60"
+            android:drawableEnd="@drawable/down"
+            android:drawablePadding="@dimen/space_5"
+            android:gravity="center"
+            android:text="@string/pay_across_type"
+            android:textColor="@color/slide_text"
+            android:textSize="@dimen/text_size16" />
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/space_55"
+        app:srlDragRate="0.8"
+        app:srlFooterTriggerRate="0.8"
+        app:srlHeaderHeight="@dimen/space_50"
+        app:srlHeaderTriggerRate="0.8">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_main_pay_measure"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v7.widget.RecyclerView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@color/bottom_bg"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_measure_bottom_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共32条记录,未处理12个,已处理20个"
+            android:textColor="#f7f7f7"
+            android:textSize="@dimen/text_size16" />
+    </LinearLayout>
+</LinearLayout>

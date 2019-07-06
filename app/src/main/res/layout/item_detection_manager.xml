@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ry_task_progress"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_60"
+    android:padding="@dimen/space_2"
+    >
+
+    <ImageView
+        android:id="@+id/im_item_detect_image"
+        android:layout_width="@dimen/space_52"
+        android:layout_height="@dimen/space_52"
+        android:layout_marginStart="@dimen/space_5"
+        android:src="@drawable/infrared" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/im_item_detect_image"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/space_10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_item_detect_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="检测管理红外测温任务"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size16" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_item_detec_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张三"
+                android:textColor="@color/hint_text"
+                android:textSize="@dimen/text_size14" />
+
+            <View
+                android:layout_width="@dimen/space_1"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/space_11"
+                android:background="@color/hint_text" />
+
+            <TextView
+                android:id="@+id/tv_item_detect_time"
+                android:layout_width="@dimen/space_150"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_11"
+                android:maxLines="1"
+                android:text="2019-04-24 10：12：12"
+                android:textColor="@color/hint_text"
+                android:textSize="@dimen/text_size14" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/item_task_unstart"/>
+
+    <LinearLayout
+        android:layout_below="@+id/im_item_detect_image"
+        android:layout_marginTop="@dimen/space_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_bg"
+            />
+    </LinearLayout>
+</RelativeLayout>

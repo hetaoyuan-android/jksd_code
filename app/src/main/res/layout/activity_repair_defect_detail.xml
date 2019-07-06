@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.activity_repair.stand_detail.RepairDefectDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_70"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_10">
+
+        <RadioGroup
+            android:id="@+id/rg_repair"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_repair_task_bill"
+                style="@style/rb_top_repair_detail"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="缺陷台账" />
+
+            <RadioButton
+                android:id="@+id/rb_repair_task_check"
+                style="@style/rb_top_repair_detail"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="缺陷消缺" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_8"
+        android:background="@color/view_bg" />
+
+    <LinearLayout
+        android:id="@+id/ly_defect_bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50">
+
+            <TextView
+                style="@style/item_text_style"
+                android:text="@string/power_level" />
+
+            <TextView
+                android:id="@+id/tv_line_select"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/space_10"
+                android:gravity="center_vertical|end" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:background="@color/grey_dialog"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50">
+
+            <TextView
+                style="@style/item_text_style"
+                android:text="@string/detect_line_name" />
+
+            <TextView
+                android:id="@+id/tv_tower_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/space_10"
+                android:gravity="center_vertical|end" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:background="@color/grey_dialog"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50">
+
+            <TextView
+                style="@style/item_text_style"
+                android:text="@string/tower_number" />
+
+            <TextView
+                android:id="@+id/tv_tower_create"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/space_10"
+                android:gravity="center_vertical|end" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:background="@color/grey_dialog"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50">
+
+            <TextView
+                style="@style/item_text_style"
+                android:text="@string/content_describe" />
+
+            <TextView
+                android:id="@+id/tv_tower_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/space_10"
+                android:gravity="center_vertical|end" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:background="@color/grey_dialog">
+
+        </View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50">
+
+            <TextView
+                android:id="@+id/tv_repair_content_title"
+                style="@style/item_text_style"
+                android:text="@string/defect_describe" />
+
+            <TextView
+                android:id="@+id/tv_repair_content_title_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/space_10"
+                android:gravity="center_vertical|end" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_8"
+            android:background="@color/view_bg" />
+
+        <include
+            layout="@layout/item_repair_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/ly_defect_fixed"
+       android:visibility="gone"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/space_50">
+
+           <TextView
+               style="@style/item_text_style"
+               android:text="@string/repair_line_name" />
+
+           <TextView
+               android:id="@+id/tv_line_name"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginEnd="@dimen/space_10"
+               android:gravity="center_vertical|end" />
+       </RelativeLayout>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/space_1"
+           android:background="@color/grey_dialog"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/space_50">
+
+           <TextView
+               style="@style/item_text_style"
+               android:text="@string/tower_number" />
+
+           <TextView
+               android:id="@+id/tv_tower_num"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginEnd="@dimen/space_10"
+               android:gravity="center_vertical|end" />
+       </RelativeLayout>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/space_1"
+           android:background="@color/grey_dialog"></View>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/space_50">
+
+           <TextView
+               style="@style/item_text_style"
+               android:text="@string/defect_number" />
+
+           <TextView
+               android:id="@+id/tv_defect_number"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginEnd="@dimen/space_10"
+               android:gravity="center_vertical|end" />
+       </RelativeLayout>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/space_1"
+           android:background="@color/grey_dialog"></View>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/space_50">
+
+           <TextView
+               style="@style/item_text_style"
+               android:text="@string/task_number" />
+
+           <TextView
+               android:id="@+id/tv_task_number"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginEnd="@dimen/space_10"
+               android:gravity="center_vertical|end" />
+       </RelativeLayout>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/space_1"
+           android:background="@color/grey_dialog">
+
+       </View>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/space_50">
+
+           <TextView
+               style="@style/item_text_style"
+               android:text="@string/record_number" />
+
+           <TextView
+               android:id="@+id/tv_record_number"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginEnd="@dimen/space_10"
+               android:gravity="center_vertical|end" />
+       </RelativeLayout>
+
+   </LinearLayout>
+
+</LinearLayout>

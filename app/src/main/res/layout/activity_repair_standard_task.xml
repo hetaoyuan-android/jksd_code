@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.glens.jksd.activity.activity_repair.RepairStandardTaskActivity">
+
+    <LinearLayout
+        android:id="@+id/repair_total"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <HorizontalScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_100">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rg_repair_standard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/space_10">
+
+                    <RadioButton
+                        android:id="@+id/rb_standard_tower_check"
+                        style="@style/rb_top_circle"
+                        android:padding="@dimen/space_20"
+                        android:text="登杆检查" />
+
+                    <RadioButton
+                        android:id="@+id/rb_standard_task_defect"
+                        style="@style/rb_top_circle"
+                        android:padding="@dimen/space_20"
+                        android:text="消缺工作" />
+
+                    <RadioButton
+                        android:id="@+id/rb_standard_clean"
+                        style="@style/rb_top_circle"
+                        android:padding="@dimen/space_15"
+                        android:text="绝缘子清扫" />
+
+                    <RadioButton
+                        android:id="@+id/rb_standard_line_check"
+                        style="@style/rb_top_circle"
+                        android:padding="@dimen/space_20"
+                        android:text="走线检查" />
+
+                    <RadioButton
+                        android:id="@+id/rb_standard_tower_spray"
+                        style="@style/rb_top_circle"
+                        android:padding="@dimen/space_20"
+                        android:text="RTV喷涂" />
+
+                    <RadioButton
+                        android:id="@+id/rb_standard_water"
+                        style="@style/rb_top_circle"
+                        android:padding="@dimen/space_15"
+                        android:text="憎水性实验" />
+                </RadioGroup>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:background="@color/grey_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_5">
+        </View>
+
+
+
+        <!--<android.support.v4.widget.SwipeRefreshLayout-->
+            <!--android:id="@+id/swipe_refresh_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/repair_standard_RecyclerView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/space_50"/>-->
+
+        <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_repair_item"
+        android:layout_below="@+id/repair_total"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <!--<include-->
+        <!--android:layout_gravity="bottom"-->
+        <!--layout="@layout/item_bottom_submit"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/space_80" />-->
+
+</RelativeLayout>

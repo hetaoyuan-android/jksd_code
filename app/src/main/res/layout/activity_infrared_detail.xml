@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_50"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size16" />
+
+                    <TextView
+                        android:id="@+id/tv_infrared_detail_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/space_20"
+                        android:text="@string/big_tree_pole"
+                        android:textColor="@color/grey_hint"
+                        android:textSize="@dimen/text_size16" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/view_bg" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_50"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/time"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size16" />
+
+                    <TextView
+                        android:id="@+id/tv_infrared_detail_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/space_20"
+                        android:text="@string/big_tree_pole"
+                        android:textColor="@color/grey_hint"
+                        android:textSize="@dimen/text_size16" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/view_bg" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_50"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/detect_line_name"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size16" />
+
+                    <TextView
+                        android:id="@+id/tv_infrared_detail_line_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/space_20"
+                        android:text="@string/big_tree_pole"
+                        android:textColor="@color/grey_hint"
+                        android:textSize="@dimen/text_size16" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/view_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_50"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pole_name"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size16" />
+
+                    <TextView
+                        android:id="@+id/tv_infrared_detail_tower_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/space_20"
+                        android:text="002杆"
+                        android:textColor="@color/grey_hint"
+                        android:textSize="@dimen/text_size16" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/view_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_50"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_10"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/parts_name"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size16"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <Spinner
+                        android:id="@+id/spinner_department"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/space_5"
+                        android:textAlignment="gravity"
+                        />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_8"
+                    android:background="@color/view_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_50"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/environment_temper"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size16" />
+
+                    <EditText
+                        android:id="@+id/tv_infrared_detail_env"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/space_20"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="@string/select_environment_temper"
+                        android:textColor="@color/grey_hint"
+                        android:textSize="@dimen/text_size16" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/view_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_50"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/normal_temper"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size16" />
+
+                    <EditText
+                        android:id="@+id/tv_infrared_detail_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/space_20"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="@string/select_normal_temper"
+                        android:textColor="@color/grey_hint"
+                        android:textSize="@dimen/text_size16" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/view_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_50"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/highest_temper"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size16" />
+
+                    <EditText
+                        android:id="@+id/tv_infrared_detail_high_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/space_20"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="@string/select_highest_temper"
+                        android:textColor="@color/grey_hint"
+                        android:textSize="@dimen/text_size16" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_8"
+                    android:background="@color/view_bg" />
+            </LinearLayout>
+
+            <include layout="@layout/scene_describe_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/space_25"
+                        android:layout_marginStart="@dimen/space_5"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/all_visible_bg"
+                        android:gravity="center"
+                        android:text="@string/all_visible"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size14" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/space_50"
+                        android:layout_weight="0.15"
+                        android:gravity="center"
+                        android:text="@string/phase_a"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size16" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/space_50"
+                        android:layout_weight="0.15"
+                        android:text="@string/phase_b"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size16" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/space_50"
+                        android:layout_weight="0.15"
+                        android:text="@string/phase_c"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size16" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/space_50"
+                        android:layout_weight="0.15"
+                        android:text="@string/lan_line"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size16" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/space_50"
+                        android:layout_weight="0.15"
+                        android:text="@string/splicing_sleeve"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size16" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/view_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_120">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/least_one" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_120"
+                android:background="@color/search_bg">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/space_20"
+                    android:layout_marginEnd="@dimen/space_20"
+                    android:background="@drawable/clt_circular_button_bg3"
+                    android:text="@string/edit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size18" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
